@@ -1,7 +1,35 @@
 #include <iostream>
 #include <string>
 using namespace std;
+string encrypt(string s)
+{
+    for(char c:s)
+    {
+        c+=1;
+    }
+    return s;
 
+}
+string decrypt(string s)
+{
+    for(char c:s)
+    {
+        c-=1;
+    }
+    return s;
+}
+int main()
+{
+    string s;
+    cout<<"input a string: "<<endl;
+    cin>>s;
+    cout<<"string by encrypting:"<<encrypt(s)<<endl;
+    cout<<"decrypt the string :"<<decrypt(encrypt(s));
+    return 0;
+}
+
+
+/*
 string encrypt(string s)
 {
     string s1;
@@ -59,3 +87,6 @@ int main()
     }
     return 0;
 }
+*/
+
+
