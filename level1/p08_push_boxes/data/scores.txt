@@ -1,0 +1,5 @@
+# Push Boxes Game Scores
+# Format: PlayerName Level Steps
+TestPlayer 1 25
+Player2 1 30
+TestPlayer 2 45
